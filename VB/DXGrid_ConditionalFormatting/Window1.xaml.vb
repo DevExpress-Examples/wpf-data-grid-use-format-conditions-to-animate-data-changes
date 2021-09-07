@@ -10,11 +10,11 @@ Imports DevExpress.Xpf.Grid
 Imports System.Windows.Controls
 
 Namespace DXGrid_ConditionalFormatting
-    Partial Public Class Window1
-        Inherits Window
+	Partial Public Class Window1
+		Inherits Window
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
-    End Class
+		Public Sub New()
+			InitializeComponent()
+		End Sub
+	End Class
 End Namespace
