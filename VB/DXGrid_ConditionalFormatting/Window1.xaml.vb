@@ -1,6 +1,4 @@
 Imports System.Windows
-Imports System.ComponentModel
-Imports System.Windows.Controls
 
 Namespace DXGrid_ConditionalFormatting
 

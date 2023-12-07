@@ -1,15 +1,12 @@
-Imports DevExpress.Mvvm.DataAnnotations
+Imports DevExpress.Mvvm
 Imports System
-Imports System.Collections.Generic
 Imports System.Collections.ObjectModel
-Imports System.ComponentModel
-Imports System.Linq
-Imports System.Text
 Imports System.Windows.Threading
 
 Namespace DXGrid_ConditionalFormatting
 
     Public Class ViewModel
+        Inherits DevExpress.Mvvm.ViewModelBase
 
         Public Property Products As ObservableCollection(Of DXGrid_ConditionalFormatting.Product)
 
@@ -56,77 +53,56 @@ Namespace DXGrid_ConditionalFormatting
     End Class
 
     Public Class Product
-        Implements System.ComponentModel.INotifyPropertyChanged
-
-        Private nameField As String
-
-        Private oldPriceField As Decimal
-
-        Private newPriceField As Decimal
-
-        Private deltaPriceField As Decimal
-
-        Private isAvailableField As Boolean
+        Inherits DevExpress.Mvvm.BindableBase
 
         Public Property Name As String
             Get
-                Return Me.nameField
+                Return GetValue(Of String)()
             End Get
 
             Set(ByVal value As String)
-                Me.nameField = value
-                Me.RaisePropertyChanged("Name")
+                SetValue(value)
             End Set
         End Property
 
         Public Property OldPrice As Decimal
             Get
-                Return Me.oldPriceField
+                Return GetValue(Of Decimal)()
             End Get
 
             Set(ByVal value As Decimal)
-                Me.oldPriceField = value
-                Me.RaisePropertyChanged("OldPrice")
+                SetValue(value)
             End Set
         End Property
 
         Public Property NewPrice As Decimal
             Get
-                Return Me.newPriceField
+                Return GetValue(Of Decimal)()
             End Get
 
             Set(ByVal value As Decimal)
-                Me.newPriceField = value
-                Me.RaisePropertyChanged("NewPrice")
+                SetValue(value)
             End Set
         End Property
 
         Public Property DeltaPrice As Decimal
             Get
-                Return Me.deltaPriceField
+                Return GetValue(Of Decimal)()
             End Get
 
             Set(ByVal value As Decimal)
-                Me.deltaPriceField = value
-                Me.RaisePropertyChanged("DeltaPrice")
+                SetValue(value)
             End Set
         End Property
 
         Public Property IsAvailable As Boolean
             Get
-                Return Me.isAvailableField
+                Return GetValue(Of Boolean)()
             End Get
 
             Set(ByVal value As Boolean)
-                Me.isAvailableField = value
-                Me.RaisePropertyChanged("IsAvailable")
+                SetValue(value)
             End Set
         End Property
-
-        Public Event PropertyChanged As System.ComponentModel.PropertyChangedEventHandler Implements Global.System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-
-        Protected Sub RaisePropertyChanged(ByVal propertyName As String)
-            RaiseEvent PropertyChanged(Me, New System.ComponentModel.PropertyChangedEventArgs(propertyName))
-        End Sub
     End Class
 End Namespace
