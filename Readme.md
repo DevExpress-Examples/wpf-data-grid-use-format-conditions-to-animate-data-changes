@@ -25,7 +25,7 @@ This example uses the [TableView.AnimateConditionalFormattingTransition](https:/
 * [WPF Data Grid - Change Background Color for Modified Cells](https://github.com/DevExpress-Examples/wpf-data-grid-change-background-color-for-modified-cells)
 * [WPF Data Grid - Apply Conditional Formatting](https://github.com/DevExpress-Examples/wpf-data-grid-apply-conditional-formatting)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-use-format-conditions-to-animate-data-changes&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-use-format-conditions-to-animate-data-changes&~~~was_helpful=no)
 
